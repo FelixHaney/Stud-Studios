@@ -1,0 +1,2262 @@
+/* ===========================
+   STUD STUDIOS WEBSITE
+   STYLE.CSS
+=========================== */
+
+/* ---------- RESET ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #f6fff7;
+    color: #1d1d1d;
+    line-height: 1.6;
+}
+
+/* ---------- VARIABLES ---------- */
+
+:root {
+
+    --green-dark: #126b3d;
+    --green: #1ca756;
+    --green-light: #38d470;
+    --green-bg: #f6fff7;
+
+    --white: #ffffff;
+
+    --gray: #666;
+    --light-gray: #ececec;
+
+    --shadow:
+        0 8px 25px rgba(0, 0, 0, .10);
+
+    --transition:
+        .3s ease;
+
+}
+
+/* ---------- LINKS ---------- */
+
+a {
+
+    text-decoration: none;
+    color: inherit;
+
+}
+
+ul {
+
+    list-style: none;
+
+}
+
+img {
+
+    max-width: 100%;
+    display: block;
+
+}
+
+/* ---------- BUTTONS ---------- */
+
+.btn {
+
+    display: inline-block;
+
+    background: var(--green-dark);
+
+    color: white;
+
+    padding: 14px 30px;
+
+    border-radius: 12px;
+
+    font-weight: 600;
+
+    transition: var(--transition);
+
+    box-shadow: var(--shadow);
+
+}
+
+.btn:hover {
+
+    background: var(--green);
+
+    transform: translateY(-3px);
+
+}
+
+.btn.outline {
+
+    background: transparent;
+
+    border: 2px solid var(--green-dark);
+
+    color: var(--green-dark);
+
+}
+
+.btn.outline:hover {
+
+    background: var(--green-dark);
+
+    color: white;
+
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+
+    position: sticky;
+
+    top: 0;
+
+    width: 100%;
+
+    background: white;
+
+    z-index: 999;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 14px 8%;
+
+    border-bottom: 4px solid var(--green);
+
+    box-shadow: 0 4px 18px rgba(0, 0, 0, .08);
+
+    z-index: 1000;
+}
+
+/* ---------- LOGO ---------- */
+
+.logo-area {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+}
+
+.logo-area img {
+
+    width: 60px;
+
+    height: 60px;
+
+    object-fit: contain;
+
+}
+
+.logo-text h1 {
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 1.4rem;
+
+    font-weight: 700;
+
+    color: var(--green-dark);
+
+}
+
+.logo-text p {
+
+    color: #666;
+
+    font-size: .92rem;
+
+}
+
+/* ---------- NAV ---------- */
+
+nav ul {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 32px;
+
+}
+
+nav a {
+
+    position: relative;
+
+    font-weight: 600;
+
+    transition: var(--transition);
+
+}
+
+nav a:hover {
+
+    color: var(--green);
+
+}
+
+nav a.active {
+
+    color: var(--green-dark);
+
+}
+
+nav a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -8px;
+
+    width: 0;
+
+    height: 3px;
+
+    background: var(--green);
+
+    transition: .3s;
+
+    border-radius: 20px;
+
+}
+
+nav a:hover::after,
+nav a.active::after {
+
+    width: 100%;
+
+}
+
+/* ---------- MOBILE BUTTON ---------- */
+
+.mobile-menu {
+
+    display: none;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+
+    color: var(--green-dark);
+
+}
+
+/* ---------- HERO ---------- */
+
+.hero {
+
+    min-height: 88vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 10%;
+
+    background:
+        linear-gradient(rgba(246, 255, 247, .95),
+            rgba(233, 255, 239, .92));
+
+}
+
+.hero-content {
+
+    max-width: 900px;
+
+}
+
+.small-title {
+
+    display: inline-block;
+
+    color: var(--green);
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+
+}
+
+.hero h2 {
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: clamp(3rem, 7vw, 5.2rem);
+
+    color: var(--green-dark);
+
+    margin-bottom: 25px;
+
+}
+
+.hero p {
+
+    font-size: 1.25rem;
+
+    color: #555;
+
+    max-width: 760px;
+
+    margin: auto;
+
+    margin-bottom: 45px;
+
+}
+
+.hero-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+/* ---------- FEATURED ---------- */
+
+.featured {
+
+    padding: 90px 8%;
+
+}
+
+.featured h2 {
+
+    text-align: center;
+
+    font-family: "Poppins";
+
+    font-size: 2.6rem;
+
+    color: var(--green-dark);
+
+    margin-bottom: 55px;
+
+}
+
+.cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 35px;
+
+}
+
+.card {
+
+    background: white;
+
+    border-left: #126b3d solid 8px;
+
+    border-radius: 18px;
+
+    padding: 35px;
+
+    box-shadow: var(--shadow);
+
+    transition: .35s;
+
+}
+
+.card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .14);
+
+}
+
+.card h3 {
+
+    font-family: "Poppins";
+
+    color: var(--green-dark);
+
+    margin-bottom: 16px;
+
+}
+
+.card p {
+
+    color: #666;
+
+    margin-bottom: 22px;
+
+}
+
+.card a {
+
+    color: var(--green);
+
+    font-weight: 700;
+
+}
+
+.card a:hover {
+
+    color: var(--green-dark);
+
+}
+
+/* ==================================================
+   NEWS SECTION
+================================================== */
+
+.news {
+
+    padding: 90px 8%;
+
+    background: #ffffff;
+
+}
+
+.news h2 {
+
+    text-align: center;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 2.6rem;
+
+    color: var(--green-dark);
+
+    margin-bottom: 55px;
+
+}
+
+.news-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 35px;
+
+}
+
+.news-card {
+
+    background: var(--green-bg);
+
+    border-left: 6px solid var(--green);
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    box-shadow: var(--shadow);
+
+    transition: .3s;
+
+}
+
+.news-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+.news-card .date {
+
+    display: inline-block;
+
+    background: var(--green-dark);
+
+    color: white;
+
+    padding: 6px 12px;
+
+    border-radius: 25px;
+
+    font-size: .8rem;
+
+    margin-bottom: 18px;
+
+}
+
+.news-card h3 {
+
+    font-family: "Poppins";
+
+    color: var(--green-dark);
+
+    margin-bottom: 12px;
+
+}
+
+.news-card p {
+
+    color: #666;
+
+    margin-bottom: 18px;
+
+}
+
+.news-card a {
+
+    color: var(--green);
+
+    font-weight: 700;
+
+}
+
+.news-card a:hover {
+
+    color: var(--green-dark);
+
+}
+
+/*===================================================
+    OLD NEWS
+================================================== */
+
+.oldnews-card {
+    background: var(--green-bg);
+
+    border-left: 6px solid var(--green);
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    box-shadow: var(--shadow);
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+.oldnews-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+.oldnews-card .date {
+
+    display: inline-block;
+
+    background: var(--green-dark);
+
+    color: white;
+
+    padding: 6px 12px;
+
+    border-radius: 25px;
+
+    font-size: .8rem;
+
+    margin-bottom: 18px;
+
+}
+
+.oldnews-card h3 {
+
+    font-family: "Poppins";
+
+    color: var(--green-dark);
+
+    margin-bottom: 12px;
+
+}
+
+.oldnews-card p {
+
+    color: #666;
+
+    margin-bottom: 18px;
+
+}
+
+.oldnews-card a {
+
+    color: var(--green);
+
+    font-weight: 700;
+
+}
+
+.oldnews-card a:hover {
+
+    color: var(--green-dark);
+
+}
+
+.oldnews-btn {
+
+    display: inline-block;
+
+    background: var(--green-dark);
+
+    color: white;
+
+    padding: 14px 30px;
+
+    border-radius: 12px;
+
+    font-weight: 600;
+
+    transition: var(--transition);
+
+    box-shadow: var(--shadow);
+
+    text-align: center;
+
+    margin-top: 50px;
+
+}
+
+#oldnews-btn-container {
+    text-align: center;
+    width: 100%;
+}
+
+.oldnews-btn:hover {
+
+    background: var(--green);
+
+    transform: translateY(-3px);
+
+}
+
+.oldnews-btn.outline {
+
+    background: transparent;
+
+    border: 2px solid var(--green-dark);
+
+    color: var(--green-dark);
+
+}
+
+.oldnews-btn.outline:hover {
+
+    background: var(--green-dark);
+
+    color: white;
+
+}
+
+/* ==================================================
+   MINECRAFT SERVER
+================================================== */
+
+.status.online {
+    color: #2e9d45;
+    font-weight: 700;
+}
+
+.status.offline {
+    color: #d64545;
+    font-weight: 700;
+}
+
+.server {
+
+    padding: 100px 8%;
+
+    background: linear-gradient(180deg, #f6fff7, #ecfff0);
+
+}
+
+.server h2 {
+
+    text-align: center;
+
+    font-family: "Poppins";
+
+    color: var(--green-dark);
+
+    font-size: 2.7rem;
+
+    margin-bottom: 50px;
+
+}
+
+.server-box {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 45px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: var(--shadow);
+
+}
+
+.server-box h3 {
+
+    font-family: "Poppins";
+
+    margin-bottom: 20px;
+
+    color: var(--green-dark);
+
+}
+
+.status {
+
+    position: absolute;
+
+    left: 10px;
+
+    top: 5px;
+
+    font-size: 1rem;
+
+    margin-bottom: 20px;
+
+    font-weight: bold;
+
+}
+
+.online {
+
+    color: var(--green);
+
+}
+
+.server-box strong {
+
+    color: var(--green-dark);
+
+}
+
+.server-box button {
+
+    margin-top: 30px;
+
+    background: var(--green-dark);
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 28px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-size: 1rem;
+
+    transition: .3s;
+
+}
+
+.server-box button:hover {
+
+    background: var(--green);
+
+    transform: translateY(-3px);
+
+}
+
+/* ==================================================
+   TUTORIALS
+================================================== */
+
+.tutorials {
+
+    padding: 90px 8%;
+
+}
+
+.tutorials h2 {
+
+    text-align: center;
+
+    font-family: "Poppins";
+
+    font-size: 2.5rem;
+
+    color: var(--green-dark);
+
+    margin-bottom: 50px;
+
+}
+
+.tutorials .card {
+
+    text-align: center;
+
+    font-size: 1.2rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.tutorials .card:hover {
+
+    background: var(--green);
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+/* ==================================================
+   CONTACT
+================================================== */
+
+.contact {
+
+    padding: 100px 8%;
+
+    background: white;
+
+    text-align: center;
+
+}
+
+.contact h2 {
+
+    font-family: "Poppins";
+
+    color: var(--green-dark);
+
+    font-size: 2.7rem;
+
+    margin-bottom: 20px;
+
+}
+
+.contact p {
+
+    color: #666;
+
+    font-size: 1.1rem;
+
+    margin-bottom: 40px;
+
+}
+
+.contact-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 20px;
+
+}
+
+.contact-card-img {
+    height: 20px;
+    display: inline;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer {
+
+    margin-top: 80px;
+
+    background: var(--green-dark);
+
+    color: white;
+
+}
+
+.footer-banner {
+
+    width: 100%;
+
+    overflow: hidden;
+
+}
+
+.footer-banner img {
+
+    width: 100%;
+
+    height: 130px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+.footer-content {
+
+    padding: 50px 8%;
+
+    text-align: center;
+
+}
+
+.footer-content h3 {
+
+    font-family: "Poppins";
+
+    font-size: 2rem;
+
+    margin-bottom: 10px;
+
+}
+
+.footer-content p {
+
+    margin-bottom: 20px;
+
+    opacity: .9;
+
+}
+
+.footer-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    margin-bottom: 30px;
+
+}
+
+.footer-links a {
+
+    transition: .3s;
+
+}
+
+.footer-links a:hover {
+
+    color: var(--green-light);
+
+}
+
+.copyright {
+
+    opacity: .75;
+
+    font-size: .9rem;
+
+}
+
+/* ==================================================
+   SCROLLBAR
+================================================== */
+
+::-webkit-scrollbar {
+
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+
+    background: #e5e5e5;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background: var(--green);
+
+    border-radius: 20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    background: var(--green-dark);
+
+}
+
+/* ==================================================
+   ANIMATIONS
+================================================== */
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+.hero-content,
+.card,
+.news-card,
+.server-box,
+.contact {
+
+    animation: fadeUp .8s ease;
+
+}
+
+/* ==================================================
+   RESPONSIVE DESIGN
+================================================== */
+
+@media (max-width: 1000px) {
+
+    header {
+
+        padding: 15px 5%;
+
+    }
+
+    nav {
+
+        display: none;
+
+    }
+
+    .mobile-menu {
+
+        display: block;
+
+    }
+
+    .hero {
+
+        min-height: 70vh;
+
+        padding: 70px 5%;
+
+    }
+
+    .hero h2 {
+
+        font-size: 3rem;
+
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .logo-text h1 {
+
+        font-size: 1rem;
+
+    }
+
+    .logo-text p {
+
+        font-size: .8rem;
+
+    }
+
+    .hero h2 {
+
+        font-size: 2.4rem;
+
+    }
+
+    .hero p {
+
+        font-size: 1rem;
+
+    }
+
+    .cards,
+    .news-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .footer-banner img {
+
+        height: 80px;
+
+    }
+
+}
+
+.hidden {
+
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition: .7s;
+
+}
+
+.visible {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+.top-button {
+
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    width: 55px;
+
+    height: 55px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: var(--green-dark);
+
+    color: white;
+
+    font-size: 24px;
+
+    cursor: pointer;
+
+    box-shadow: var(--shadow);
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: .3s;
+
+    z-index: 999;
+
+}
+
+.top-button.show {
+
+    opacity: 1;
+
+    pointer-events: auto;
+
+}
+
+.top-button:hover {
+
+    background: var(--green);
+
+    transform: translateY(-4px);
+
+}
+
+nav.show {
+
+    display: block;
+
+    position: absolute;
+
+    top: 100%;
+
+    left: 0;
+
+    width: 100%;
+
+    background: white;
+
+    padding: 20px 0;
+
+    box-shadow: var(--shadow);
+
+}
+
+nav.show ul {
+
+    flex-direction: column;
+
+    gap: 20px;
+
+    text-align: center;
+
+}
+
+.page {
+
+    display: none;
+
+    animation: fadePage .35s ease;
+
+}
+
+.active-page {
+
+    display: block;
+
+}
+
+.nav-btn {
+
+    background: none;
+
+    border: none;
+
+    cursor: pointer;
+
+    font: inherit;
+
+    color: inherit;
+
+    padding: 8px 0;
+
+    position: relative;
+
+}
+
+.nav-btn.active {
+
+    color: var(--green-dark);
+
+}
+
+@keyframes fadePage {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+/* ======================================================
+   PAGE SYSTEM
+====================================================== */
+
+.page {
+    display: none;
+    animation: pageFade .35s ease;
+    padding: 70px 8%;
+    min-height: 75vh;
+}
+
+.active-page {
+    display: block;
+}
+
+@keyframes pageFade {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* ======================================================
+   PAGE HEADERS
+====================================================== */
+
+.page-header {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+
+}
+
+.page-header h1 {
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 3rem;
+
+    color: var(--green-dark);
+
+    margin-bottom: 15px;
+
+}
+
+.page-header p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #666;
+
+    font-size: 1.1rem;
+
+}
+
+/* ======================================================
+   HOME PAGE
+====================================================== */
+
+#home .featured {
+
+    padding: 70px 0;
+
+}
+
+#home .cards {
+
+    margin-top: 35px;
+
+}
+
+/* ======================================================
+   NEWS PAGE
+====================================================== */
+
+.news-page {
+
+    padding-bottom: 40px;
+
+}
+
+.news-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+    gap: 30px;
+
+}
+
+/* ======================================================
+   MERCH
+====================================================== */
+
+#merch .card {
+
+    text-align: center;
+
+}
+
+#merch .btn {
+
+    margin-top: 20px;
+
+}
+
+/* ======================================================
+   SUPPORT
+====================================================== */
+
+#support .card {
+
+    text-align: center;
+
+}
+
+#support .btn {
+    cursor: pointer;
+}
+
+/* ======================================================
+   CONTACT
+====================================================== */
+
+#contact .card {
+
+    text-align: center;
+
+}
+
+/* ======================================================
+   TUTORIALS
+====================================================== */
+
+#tutorials .card {
+
+    text-align: center;
+
+    cursor: pointer;
+
+}
+
+.no-tut {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    color: #126b3d;
+    font-size: larger;
+    font-weight: 700;
+}
+
+/* ======================================================
+   SERVER PAGE
+====================================================== */
+
+#server .server-box {
+
+    margin-bottom: 50px;
+
+}
+
+#server a {
+
+    color: #126b3d;
+    font-weight: bold;
+    transition-duration: 250ms;
+
+}
+
+#server a:hover {
+    color: #1ca756;
+    text-decoration: underline;
+}
+
+/* ======================================================
+   NAVIGATION BUTTONS
+====================================================== */
+
+.nav-btn {
+
+    background: none;
+
+    border: none;
+
+    color: #444;
+
+    font: inherit;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+    padding: 8px 0;
+
+    position: relative;
+
+}
+
+.nav-btn:hover {
+
+    color: var(--green);
+
+}
+
+.nav-btn.active {
+
+    color: var(--green-dark);
+
+}
+
+.nav-btn::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -6px;
+
+    width: 0;
+
+    height: 3px;
+
+    background: var(--green);
+
+    border-radius: 20px;
+
+    transition: .3s;
+
+}
+
+.nav-btn:hover::after,
+.nav-btn.active::after {
+
+    width: 100%;
+
+}
+
+/* ======================================================
+   FOOTER BUTTONS
+====================================================== */
+
+.footer-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+}
+
+.footer-links button {
+
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    cursor: pointer;
+
+    font: inherit;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+.footer-links button:hover {
+
+    color: var(--green-light);
+
+}
+
+/* ======================================================
+   CARD IMPROVEMENTS
+====================================================== */
+
+.card {
+
+    overflow: hidden;
+
+}
+
+.card h3 {
+
+    margin-bottom: 15px;
+
+}
+
+.card p {
+
+    margin-bottom: 20px;
+
+}
+
+.card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+/* ======================================================
+   MOBILE
+====================================================== */
+
+@media (max-width:900px) {
+
+    .page {
+
+        padding: 50px 5%;
+
+    }
+
+    .page-header h1 {
+
+        font-size: 2.3rem;
+
+    }
+
+}
+
+@media (max-width:700px) {
+
+    .page-header h1 {
+
+        font-size: 2rem;
+
+    }
+
+    .news-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+/* ==============================
+   NEWS IMAGES
+============================== */
+
+.news-card {
+
+    overflow: hidden;
+
+    padding: 0;
+
+}
+
+.news-card img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+.news-content {
+
+    padding: 25px;
+
+}
+
+/* =====================================
+   MERCH CARDS
+===================================== */
+
+.merch-card {
+
+    background: white;
+
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    padding: 0;
+
+    transition: .35s;
+
+    box-shadow: var(--shadow);
+
+}
+
+.merch-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .15);
+
+}
+
+.merch-card img {
+
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+.card-body {
+
+    padding: 25px;
+
+}
+
+.card-body h3 {
+
+    margin-bottom: 12px;
+
+    color: var(--green-dark);
+
+    font-family: "Poppins", sans-serif;
+
+}
+
+.card-body p {
+
+    color: #666;
+
+    margin-bottom: 18px;
+
+}
+
+/* Price */
+
+.price {
+
+    display: inline-block;
+
+    background: var(--green-dark);
+
+    color: white;
+
+    font-size: 1.2rem;
+
+    font-weight: 700;
+
+    padding: 8px 16px;
+
+    border-radius: 999px;
+
+    margin-bottom: 20px;
+
+}
+
+/* Button */
+
+.card-body .btn {
+
+    width: 100%;
+
+    text-align: center;
+
+}
+
+/* =========================================
+   MERCH PAGE
+========================================= */
+
+#merch {
+
+    position: relative;
+
+    min-height: 100vh;
+
+}
+
+/* =========================================
+   FULL PAGE OVERLAY
+========================================= */
+
+.page-overlay {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    /* Extend below the merch section */
+    bottom: -80px;
+
+    background: rgba(0, 0, 0, .60);
+    backdrop-filter: blur(7px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+
+    border-bottom: #444 5px solid;
+
+}
+
+/* Logo */
+
+.page-overlay img {
+
+    width: 140px;
+    max-width: 35vw;
+
+    margin-bottom: 25px;
+
+}
+
+/* Main Text */
+
+.page-overlay h1 {
+
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 4.5rem;
+
+    line-height: 1;
+
+    margin-bottom: 18px;
+
+    text-shadow: 0 4px 20px rgba(0, 0, 0, .45);
+
+}
+
+/* Slogan */
+
+.page-overlay p {
+
+    color: white;
+
+    font-size: 1.4rem;
+
+    font-weight: 600;
+
+    text-shadow: 0 3px 10px rgba(0, 0, 0, .45);
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:900px) {
+
+    .page-overlay {
+
+        justify-content: flex-start;
+
+        padding-top: 70px;
+
+    }
+
+    .page-overlay img {
+
+        width: 95px;
+
+        margin-bottom: 18px;
+
+    }
+
+    .page-overlay h1 {
+
+        font-size: 2.3rem;
+
+    }
+
+    .page-overlay p {
+
+        font-size: 1rem;
+
+    }
+
+}
+
+/* =========================================
+   LOADING SCREEN
+========================================= */
+
+#loader {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: linear-gradient(135deg, #eaf9ea, #d7f5d7);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    z-index: 99999;
+
+    transition: opacity .8s ease,
+        visibility .8s ease;
+
+}
+
+#loader.hide {
+
+    opacity: 0;
+
+    visibility: hidden;
+
+}
+
+.loader-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+}
+
+.loader-content img {
+
+    display: block;
+
+    width: 200px;
+
+    height: auto;
+
+    margin: 0 auto 25px auto;
+
+    animation: logoPop 1.2s ease;
+
+    border: #1ca756 5px solid;
+
+    border-radius: 20%;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+}
+
+.loader-content h1 {
+
+    margin-top: 25px;
+
+    color: var(--green-dark);
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 3rem;
+
+    letter-spacing: 2px;
+
+}
+
+.loader-content p {
+
+    margin-top: 10px;
+
+    color: #4f4f4f;
+
+    font-weight: 600;
+
+    font-size: 1.1rem;
+
+}
+
+
+
+@keyframes logoPop {
+
+    0% {
+
+        transform: scale(.75);
+
+        opacity: 0;
+
+    }
+
+    70% {
+
+        transform: scale(1.08);
+
+    }
+
+    100% {
+
+        transform: scale(1);
+
+        opacity: 1;
+
+    }
+
+}
+
+@media(max-width:700px) {
+
+    .loader-content img {
+
+        width: 95px;
+
+    }
+
+    .loader-content h1 {
+
+        font-size: 2rem;
+
+    }
+
+    .loader-bar {
+
+        width: 180px;
+
+    }
+
+}
+
+.news-card {
+
+    cursor: pointer;
+
+}
+
+.article-page {
+
+    max-width: 900px;
+
+    margin: auto;
+
+}
+
+.article-page img {
+
+    width: 100%;
+
+    border-radius: 20px;
+
+    margin: 30px 0;
+
+    border: #126b3d solid 3px;
+
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.article-page p {
+
+    line-height: 1.8;
+
+    font-size: 1.1rem;
+
+}
+
+.old-news-button {
+
+    text-align: center;
+
+    margin-top: 50px;
+
+}
+
+/* =========================================
+   FOOTER SOCIAL ICONS
+========================================= */
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-social a {
+    width: 38px;
+    height: 38px;
+    position: relative;
+    /* allows stacking */
+    transition: .25s;
+}
+
+.footer-social img {
+    position: absolute;
+    /* stack images */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity .25s;
+}
+
+/* White icon visible by default */
+.footer-social img:first-child {
+    opacity: 1;
+}
+
+/* Colored icon hidden by default */
+.footer-social img:last-child {
+    opacity: 0;
+}
+
+/* On hover: hide white icon */
+.footer-social a:hover img:first-child {
+    opacity: 0;
+}
+
+/* On hover: show colored icon */
+.footer-social a:hover img:last-child {
+    opacity: 1;
+}
+
+
+/* Optional hover movement */
+.footer-social a:hover {
+    transform: translateY(-4px) scale(1.1);
+}
+
+
+
+/* Mobile */
+
+@media (max-width:700px) {
+
+    .footer-social {
+
+        justify-content: center;
+
+        margin-top: 25px;
+
+    }
+
+}
+
+/* =========================================
+   FAQ
+========================================= */
+
+.faq-search {
+
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+
+}
+
+.faq-search input {
+
+    width: 100%;
+
+    padding: 18px 22px;
+
+    font-size: 1rem;
+
+    border: none;
+
+    border-radius: 15px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .1);
+
+    outline: none;
+
+}
+
+.faq-container {
+
+    max-width: 900px;
+
+    margin: auto;
+
+}
+
+.faq-item {
+
+    background: white;
+
+    border-radius: 16px;
+
+    margin-bottom: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+
+}
+
+.faq-question {
+
+    width: 100%;
+
+    background: none;
+
+    border: none;
+
+    padding: 22px;
+
+    text-align: left;
+
+    cursor: pointer;
+
+    font-size: 1.05rem;
+
+    font-weight: 600;
+
+    color: var(--green-dark);
+
+}
+
+.faq-answer {
+
+    display: none;
+
+    padding: 0 22px 22px;
+
+    color: #555;
+
+    line-height: 1.7;
+
+}
+
+/* =========================================
+   MC SERVER CARDS
+========================================= */
+
+.server-card {
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.server-card:hover {
+
+    transform: translateY(-8px);
+
+}

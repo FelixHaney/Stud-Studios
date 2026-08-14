@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stud Studios</title>
+
+    <link rel="icon" href="favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+<body>
+
+    <!-- =========================================
+     LOADING SCREEN
+    ========================================= -->
+
+    <div id="loader">
+
+        <div class="loader-content">
+
+            <img src="Images/logo.png" alt="Stud Studios Logo">
+
+            <h1>STUD STUDIOS</h1>
+
+            <p>
+
+                Build. Create. Inspire.<sup>™</sup>
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo-area">
+
+            <img src="Images/logo.png" alt="Stud Studios Logo">
+
+            <div class="logo-text">
+
+                <h1>STUD STUDIOS</h1>
+
+                <p>Build. Create. Inspire.<sup>™</sup></p>
+
+            </div>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><button class="nav-btn active" onclick="showSection('home', this)">Home</button></li>
+
+                <li><button class="nav-btn" onclick="showSection('news', this)">News</button></li>
+
+                <li><button class="nav-btn" onclick="showSection('merch', this)">Merch</button></li>
+
+                <li><button class="nav-btn" onclick="showSection('support', this)">Support</button></li>
+
+                <li><button class="nav-btn" onclick="showSection('contact', this)">Contact</button></li>
+
+                <li><button class="nav-btn" onclick="showSection('server', this)">MC Server</button></li>
+
+                <li><button class="nav-btn" onclick="showSection('tutorials', this)">Tutorials</button></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="mobile-menu">
+
+            ☰
+
+        </div>
+
+    </header>
+
+    <!-- ========================================= -->
+    <!-- HOME PAGE -->
+    <!-- ========================================= -->
+
+    <main>
+
+        <section id="home" class="page active-page">
+
+            <!-- HERO -->
+
+            <section class="hero">
+
+                <div class="hero-content">
+
+                    <span class="small-title">
+                        Welcome to
+                    </span>
+
+                    <h2>
+                        Stud Studios
+                    </h2>
+
+                    <p>
+
+                        Where LEGO creativity meets Minecraft imagination. Discover builds, tutorials, videos,
+                        adventures,
+                        and a community built around creating amazing things.
+
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="https://youtube.com/@cymiller2084?si=J98IRNpgdPBNKlAM" class="btn">
+
+                            Main Channel
+
+                        </a>
+
+                        <a href="https://www.youtube.com/channel/UCr9oH3rZzVnVFzcQ6iFsONg" class="btn outline">
+
+                            Gaming Channel
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- FEATURED -->
+
+            <section class="featured">
+
+                <h2>Featured In Stud Studios</h2>
+
+                <div class="cards">
+
+                    <article class="card">
+
+                        <h3>YouTube Videos</h3>
+
+                        <p>
+
+                            Watch our newest LEGO creations, Minecraft adventures, and creative projects.
+
+                        </p>
+
+                    </article>
+
+                    <article class="card">
+
+                        <h3>LEGO Builds</h3>
+
+                        <p>
+
+                            Explore original LEGO builds, MOCs, techniques, and behind-the-scenes projects.
+
+                        </p>
+
+                    </article>
+
+                    <article class="card">
+
+                        <h3>Minecraft</h3>
+
+                        <p>
+
+                            Survival, tutorials, SMP adventures, commands, redstone, and more.
+
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- QUICK NEWS -->
+
+            <section class="featured">
+
+                <h2>Latest News</h2>
+
+                <div class="cards">
+
+                    <article class="card">
+
+                        <h3>Website Launch</h3>
+
+                        <p>
+
+                            The official Stud Studios website is finally here!
+
+                        </p>
+
+                        <button class="btn" onclick="showSection('news', document.querySelectorAll('.nav-btn')[1])">
+
+                            View News
+
+                        </button>
+
+                    </article>
+
+                    <article class="card">
+
+                        <h3>MC Server</h3>
+
+                        <p>
+
+                            Read more about our Minecraft Server!
+
+                        </p>
+
+                        <button class="btn" onclick="showSection('news', document.querySelectorAll('.nav-btn')[1])">
+
+                            View News
+
+                        </button>
+
+                    </article>
+
+                    <article class="card">
+
+                        <h3>New Gaming Channel!</h3>
+
+                        <p>
+
+                            Make sure to check out our new Stud Studios Gaming Channel!
+
+                        </p>
+
+                        <button class="btn" onclick="showSection('news', document.querySelectorAll('.nav-btn')[1])">
+
+                            View News
+
+                        </button>
+
+                    </article>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ABOUT -->
+
+            <section class="featured">
+
+                <h2>About Stud Studios</h2>
+
+                <div class="card">
+
+                    <h3>Build. Create. Inspire.™</h3>
+
+                    <p>
+
+                        Stud Studios is all about creativity.
+
+                        Whether it's designing incredible LEGO builds, creating amazing Minecraft worlds, making
+                        entertaining YouTube videos, or helping others learn through tutorials, the goal is simple:<br>
+
+                        <strong>Build. Create. Inspire.</strong>
+
+                    </p>
+
+                </div>
+
+            </section>
+
+        </section>
+
+        <!-- ========================================= -->
+        <!-- NEWS PAGE -->
+        <!-- ========================================= -->
+
+        <section id="news" class="page">
+
+            <section class="page-header">
+
+                <h1>Latest News</h1>
+
+                <p>
+                    Keep up with everything happening at Stud Studios.
+                </p>
+
+            </section>
+
+            <section class="news-page">
+
+                <div class="news-grid">
+
+                    <!-- Copy this entire article to make another news post -->
+
+                    <article class="news-card" onclick="openArticle('launch')">
+
+                        <img src="Images/news/website-launch.jpg" alt="Website Launch">
+
+                        <div class="news-content">
+
+                            <span class="date">July 23, 2026</span>
+
+                            <h3>Website Released!</h3>
+
+                            <p>
+
+                                Welcome to the official Stud Studios website! We're excited to share LEGO builds,
+                                Minecraft projects, tutorials, and much more.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article class="news-card" onclick="openArticle('mc server')">
+
+                        <img src="Images/news/MC Server SS 2.png" alt="MC Server">
+
+                        <div class="news-content">
+
+                            <span class="date">May 1, 2026</span>
+
+                            <h3>Work Begins On MC Server</h3>
+
+                            <p>
+
+                                Work officially begins on the Stud Studios Minecraft Server! Explore the
+                                Stud Studios City and collect credits for the server marketplace.
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <article class="news-card" onclick="openArticle('gaming channel')">
+
+                        <img src="Images/news/gaming-logo(news).png" alt="Stud Gaming">
+
+                        <div class="news-content">
+
+                            <span class="date">February 25, 2026</span>
+
+                            <h3>New Gaming Channel!</h3>
+
+                            <p>
+
+                                Stud Studios new Gaming Channel! Here you can watch bedwars episodes, Minecraft
+                                tutorials,
+                                and other cool videos!
+
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+                <div class="old-news-button">
+
+                    <button class="btn" onclick="showSection('oldnews', document.querySelectorAll('.nav-btn')[1])">
+
+                        View Old News
+
+                    </button>
+
+                </div>
+
+            </section>
+
+        </section>
+
+        <!-- ARTICLES -->
+
+        <section id="launch" class="page article-page">
+
+            <button class="btn" onclick="showSection('news', document.querySelectorAll('.nav-btn')[1])">
+
+                ← Back to News
+
+            </button>
+
+            <h1>Website Released!</h1>
+
+            <span class="date">
+
+                July 23, 2026
+
+            </span>
+
+            <img src="Images/news/website-launch.jpg" alt="Website Launch">
+
+            <p>
+
+                Welcome to the official Stud Studios website! We're excited to finally open the doors to a brand new
+                home for our community. Whether you're here because you enjoy LEGO builds, Minecraft adventures,
+                tutorials, or just want to stay up to date with everything happening at Stud Studios, you've come to the
+                right place.
+
+            </p>
+
+            <p>
+
+                This website is designed to be the central hub for everything Stud Studios. Here you'll find the latest
+                news, official merchandise, Minecraft server information, tutorials, community updates, and much more as
+                the website continues to grow. Our goal is to make it easier than ever for viewers and community members
+                to find everything they're looking for in one place.
+
+            </p>
+
+            <p>
+
+                The website was designed and developed by <strong>Felix Haney</strong>, who worked closely with Stud
+                Studios owner <strong>Cy Miller</strong> to create a clean, modern experience that reflects the
+                channel's focus on creativity and building. Together, they wanted a website that combines the worlds of
+                LEGO and Minecraft while providing useful resources for the entire community.
+
+            </p>
+
+            <p>
+
+                This is only the beginning. More pages, tutorials, merchandise, community events, and new features are
+                already planned for future updates. Thank you for visiting, and we hope you'll continue to join us as
+                Stud Studios continues to grow.
+
+            </p>
+
+        </section>
+
+        <section id="mc server" class="page article-page">
+
+            <button class="btn" onclick="showSection('news', document.querySelectorAll('.nav-btn')[1])">
+
+                ← Back to News
+
+            </button>
+
+            <h1>Work Begins On MC Server</h1>
+
+            <span class="date">
+
+                May 1, 2026
+
+            </span>
+
+            <img src="Images/news/MC Server SS 3.png">
+
+            <p>
+
+                The official Stud Studios Minecraft Server is now open for everyone to enjoy! Whether you're a longtime
+                fan of the channel or a brand-new visitor, the server is designed to give players a fun and welcoming
+                place to build, explore, and make new friends.
+
+            </p>
+
+            <p>
+
+                Every new player begins their adventure in the Main City. The city acts as the heart of the server,
+                where you'll find important buildings, shops, helpful information, and other players. If you're just
+                getting started, you can spend your first nights at the city's tavern before heading out into the
+                wilderness to begin your own journey.
+
+            </p>
+
+            <p>
+
+                Once you're ready, you can leave the safety of the city and carve out your own path. Build a home, start
+                a village with friends, or travel far from civilization in search of valuable resources. Trading plays
+                an important role on the server, and players are encouraged to create shops, exchange supplies, and
+                build a thriving economy together.
+
+            </p>
+
+            <p>
+
+                Whether you choose to stay close to the city or venture thousands of blocks away, every player's story
+                becomes part of the Stud Studios world. We can't wait to see the incredible builds, businesses, and
+                communities that everyone creates together.
+
+            </p>
+
+            <p>
+                <strong>DEVS:</strong> <em>GoofyMooCow, Spy Cow, StudStudios, Wasabi_Warrior21.</em><br>
+                Thank you to all who helped build this server. We would also like to thank the players who helped build
+                it up!
+            </p>
+
+        </section>
+
+        <section id="gaming channel" class="page article-page">
+
+            <button class="btn" onclick="showSection('news', document.querySelectorAll('.nav-btn')[1])">
+
+                ← Back to News
+
+            </button>
+
+            <h1>New Gaming Channel!</h1>
+
+            <span class="date">
+
+                February 25, 2026
+
+            </span>
+
+            <img src="Images/gaming-logo.png">
+
+            <p>
+
+                We're excited to officially introduce <strong>Stud Studios Gaming</strong>, the second YouTube channel
+                created by <strong>Cy Miller</strong>. While the main Stud Studios channel focuses on creative projects,
+                LEGO builds, Minecraft content, and tutorials, Stud Studios Gaming gives viewers even more opportunities
+                to enjoy fun gameplay and exciting adventures.
+
+            </p>
+
+            <p>
+
+                On the Gaming channel, you'll find gameplay videos, Minecraft series, challenges, and a variety of other
+                games as the channel continues to expand. It's the perfect place for viewers who enjoy watching
+                entertaining gaming content alongside the creative projects featured on the main channel.
+
+            </p>
+
+            <p>
+
+                Stud Studios Gaming allows Cy to share even more of his passion for gaming while keeping the main Stud
+                Studios channel focused on creativity, building, and inspiring others. Together, the two channels offer
+                something for everyone, whether you're interested in LEGO creations, Minecraft builds, survival
+                adventures, tutorials, or gaming videos.
+
+            </p>
+
+            <p>
+
+                Be sure to subscribe to both channels so you never miss new uploads, exciting projects, or future
+                announcements. Thank you for supporting Stud Studios—we're looking forward to everything that's still to
+                come!
+
+            </p>
+
+        </section>
+
+        <section id="discord server" class="page article-page">
+
+            <button class="btn" onclick="showSection('oldnews')">
+
+                ← Back to Old News
+
+            </button>
+
+            <h1>Join Our Discord Community!</h1>
+
+            <span class="date">
+
+                April 1, 2026
+
+            </span>
+
+            <img src="Images/news/discord_logo(news).png" alt="Discord Logo">
+
+            <p>
+
+            <p>
+
+                Looking for a place to chat with other fans, share your creations, or stay informed about everything
+                happening at Stud Studios? Our official Discord server is the perfect place to do just that. Whether
+                you're interested in LEGO, Minecraft, gaming, or simply meeting new people, everyone is welcome to join
+                the community.
+
+            </p>
+
+            <p>
+
+                Inside the server you'll find channels dedicated to showcasing your own builds, discussing new videos,
+                sharing Minecraft screenshots, asking for help with projects, and talking with other members of the
+                community. As the server continues to grow, more events and activities will be added for everyone to
+                enjoy.
+
+            </p>
+
+            <p>
+
+                The Discord server is also the best place to receive announcements about upcoming videos, Minecraft
+                server updates, community events, and merchandise. Members often get news before it's posted anywhere
+                else, making it the perfect place to stay connected with Stud Studios.
+
+            </p>
+
+            <p>
+
+                Whether you've been watching Stud Studios for years or you've only recently discovered the channel, we'd
+                love to have you join us. Click the Discord button on the Contact or Support page and become part of our
+                growing community today!
+
+            </p>
+
+            </p>
+
+        </section>
+
+        <section id="more vids" class="page article-page">
+
+            <button class="btn" onclick="showSection('oldnews')">
+
+                ← Back to Old News
+
+            </button>
+
+            <h1>More Videos Coming Soon!</h1>
+
+            <span class="date">
+
+                <strong>- -, -</strong>
+
+            </span>
+
+            <img src="Images/news/youtube_logo(news).png" alt="Youtube Logo">
+
+            <p>
+
+                Stud Studios has plenty of exciting projects currently in development, and that means more videos are
+                coming soon! From creative LEGO builds and Minecraft adventures to tutorials and behind-the-scenes
+                content, there's a lot to look forward to over the coming weeks and months.
+
+            </p>
+
+            <p>
+
+                Every video is carefully planned and produced to make sure it delivers the best experience possible.
+                Rather than rushing content, time is spent designing builds, recording gameplay, editing footage, and
+                adding the finishing touches before each upload is released.
+
+            </p>
+
+            <p>
+
+                Future uploads may include brand-new Minecraft survival episodes, detailed LEGO creations, helpful
+                building tutorials, community events, and special projects that have never appeared on the channel
+                before. As Stud Studios continues to grow, so will the variety of content available for everyone to
+                enjoy.
+
+            </p>
+
+            <p>
+
+                If you don't want to miss any future uploads, be sure to subscribe to both the Stud Studios and Stud
+                Studios Gaming YouTube channels. Thank you for supporting the channel—we can't wait to share what's
+                coming next!
+
+            </p>
+
+        </section>
+
+        <!-- OLD NEWS -->
+
+        <section id="oldnews" class="page">
+
+            <section class="page-header">
+
+                <h1>News Archive</h1>
+
+                <p>
+
+                    Older announcements from Stud Studios.
+
+                </p>
+
+            </section>
+
+            <div class="news-grid">
+
+                <article class="oldnews-card" onclick="openArticle('discord server')">
+
+                    <span class="date">
+
+                        April 1, 2026
+
+                    </span>
+
+                    <h3>
+
+                        Join Our Discord Community!
+
+                    </h3>
+
+                    <p>
+
+                        Chat with other stud studios fans!
+
+                    </p>
+
+                </article>
+
+                <article class="oldnews-card" onclick="openArticle('more vids')">
+
+                    <span class="date">
+
+                        <strong>- -, -</strong>
+
+                    </span>
+
+                    <h3>
+
+                        More Videos Coming Soon!
+
+                    </h3>
+
+                    <p>
+
+                        Be sure to be on the lookout for more videos! They're coming!
+
+                    </p>
+
+                </article>
+
+            </div>
+
+            <div id="oldnews-btn-container">
+                <button class="oldnews-btn" onclick="showSection('news', document.querySelectorAll('.nav-btn')[1])">
+                    ← Back to News
+                </button>
+            </div>
+
+
+        </section>
+
+
+
+
+        <!-- ========================================= -->
+        <!-- MERCH PAGE -->
+        <!-- ========================================= -->
+
+        <section id="merch" class="page">
+
+            <section class="page-header">
+
+                <h1>Stud Studios Merch</h1>
+
+                <p>
+
+                    Official merchandise will be available here.
+
+                </p>
+
+            </section>
+
+            <section class="cards">
+
+                <article class="card merch-card">
+
+                    <img src="Images/merch/shirt.png" alt="Stud Studios Shirt">
+
+                    <div class="card-body">
+
+                        <h3>Stud Studios Shirt</h3>
+
+                        <p>
+
+                            Comfortable cotton t-shirt featuring the official Stud Studios logo.
+
+                        </p>
+
+                        <div class="price">
+
+                            $24.99
+
+                        </div>
+
+                        <button class="btn">
+
+                            Buy Now
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="card merch-card">
+
+                    <img src="Images/merch/cap.png" alt="Stud Studios Cap">
+
+                    <div class="card-body">
+
+                        <h3>Stud Studios Cap</h3>
+
+                        <p>
+
+                            Comfortable, airy baseball cap featuring the official Stud Studios logo.
+
+                        </p>
+
+                        <div class="price">
+
+                            $29.99
+
+                        </div>
+
+                        <button class="btn">
+
+                            Buy Now
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="card merch-card">
+
+                    <img src="Images/merch/hoodie.png" alt="Stud Studios Hoodie">
+
+                    <div class="card-body">
+
+                        <h3>Stud Studios Shirt</h3>
+
+                        <p>
+
+                            Comfortable pull-on hoodie featuring the Stud Studios logo.
+
+                        </p>
+
+                        <div class="price">
+
+                            $49.99
+
+                        </div>
+
+                        <button class="btn">
+
+                            Buy Now
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <article class="card merch-card">
+
+                    <img src="Images/merch/stickers.png" alt="Stud Studios Stickers">
+
+                    <div class="card-body">
+
+                        <h3>Stud Studios Stickers</h3>
+
+                        <p>
+
+                            A set of three water-bottle stickers featuring the logo and the slogan.
+
+                        </p>
+
+                        <div class="price">
+
+                            $4.99
+
+                        </div>
+
+                        <button class="btn">
+
+                            Buy Now
+
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+            <div class="page-overlay">
+
+                <img src="Images/logo.png">
+
+                <h1>MERCH<br>COMING SOON</h1>
+
+                <p>Build. Create. Inspire.<sup>™</sup></p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================= -->
+        <!-- SUPPORT PAGE -->
+        <!-- ========================================= -->
+
+        <section id="support" class="page">
+
+            <section class="page-header">
+
+                <h1>Support</h1>
+
+                <p>
+
+                    If you’re experiencing issues with downloads, client access, or any services provided by Stud
+                    Studios, please reach out using the support email below.<br>
+
+                    <strong>• Email: stud.studios@outlook.com</strong><br>
+
+                    • Response Time: 24–48 hours<br>
+                </p>
+
+            </section>
+
+            <div class="cards">
+
+                <article class="card">
+
+                    <h3>❓ Frequently Asked Questions</h3>
+
+                    <p>
+
+                        Find answers to the most common questions about Stud Studios.
+
+                    </p>
+
+                    <a class="btn" onclick="showSection('faq', document.querySelectorAll('.nav-btn')[3])">
+
+                        FAQ
+
+                    </a>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>Feedback/Report</h3>
+
+                    <p>
+                        Found a bug or issue? Let us know so we can fix it. Also send feedback about changes YOU would
+                        like to see!
+                    </p>
+
+                    <a href="mailto: stud.studios@outlook.com" class="btn">
+
+                        Contact
+
+                    </a>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>Discord Community</h3>
+
+                    <p>
+
+                        Join the community and report a problem there. We have specific channels meant for reporting and
+                        requesting things. (#requests)
+
+                    </p>
+
+                    <a href="https://discord.gg/uM8w2qUzVJ" class="btn">
+
+                        Join Discord
+
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- FAQ PAGE -->
+
+        <section id="faq" class="page">
+
+            <section class="page-header">
+
+                <h1>Frequently Asked Questions</h1>
+
+                <p>
+
+                    Search our knowledge base to quickly find answers.
+
+                </p>
+
+            </section>
+
+            <div class="faq-search">
+
+                <input type="text" id="faqSearch" placeholder="Search FAQs..." onkeyup="searchFAQ()">
+
+            </div>
+
+            <div class="faq-container">
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is Stud Studios?
+                    </button>
+                    <div class="faq-answer">
+                        Stud Studios is a creative brand dedicated to building, designing, and inspiring through LEGO
+                        creations,
+                        Minecraft projects, tutorials, and community-driven content. We focus on delivering high-quality
+                        builds,
+                        engaging videos, and interactive experiences that encourage creativity for all ages. Whether
+                        you're a builder,
+                        a gamer, or someone who simply enjoys watching unique projects come to life, Stud Studios aims
+                        to provide a
+                        welcoming space where imagination thrives.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How can I stay updated on new videos, builds, or announcements?
+                    </button>
+                    <div class="faq-answer">
+                        The best way to stay updated is by checking our News page, following our social platforms, and
+                        joining the
+                        Discord Community. We regularly post updates about upcoming projects, behind-the-scenes
+                        progress, release
+                        dates, and important announcements. Staying connected ensures you never miss anything exciting
+                        happening at
+                        Stud Studios.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How do I join the Minecraft Server?
+                    </button>
+                    <div class="faq-answer">
+                        To join the Minecraft Server, simply visit the MC Server page where you’ll find the latest IP
+                        address,
+                        connection instructions, server rules, and any additional details you may need. We keep this
+                        page updated so
+                        players always have access to the most current information.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        When will merchandise release?
+                    </button>
+                    <div class="faq-answer">
+                        Merchandise is currently under development as we work to create high-quality apparel and
+                        accessories inspired
+                        by Stud Studios. We want to ensure every item meets our standards before release. Keep an eye on
+                        the News page
+                        for official announcements, sneak peeks, and release dates as they become available.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        How do I contact Stud Studios?
+                    </button>
+                    <div class="faq-answer">
+                        You can reach out to us through the Contact page, where you’ll find our email and links to our
+                        Discord
+                        community. Whether you have business inquiries, collaboration ideas, or general questions, we’re
+                        always happy
+                        to hear from you.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I suggest a video idea?
+                    </button>
+                    <div class="faq-answer">
+                        Absolutely! We love hearing ideas from the community. You can submit your suggestions through
+                        Discord or email.
+                        Every idea is reviewed, and many of our projects are inspired directly by viewer feedback.
+                    </div>
+                </div>
+
+                <!-- NEW FAQ ITEMS BELOW -->
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you offer tutorials for your builds?
+                    </button>
+                    <div class="faq-answer">
+                        Yes! Our Tutorials page includes step-by-step guides, tips, and instructions for both LEGO and
+                        Minecraft
+                        projects. We aim to make learning accessible, whether you're a beginner or an experienced
+                        builder looking to
+                        expand your skills.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                </div>
+
+                <br><br>
+
+                <button class="btn" onclick="showSection('support', document.querySelectorAll('.nav-btn')[3])">
+
+                    ← Back to Support
+
+                </button>
+
+        </section>
+
+        <!-- ========================================= -->
+        <!-- CONTACT PAGE -->
+        <!-- ========================================= -->
+
+        <section id="contact" class="page">
+
+            <section class="page-header">
+
+                <h1>Contact Us</h1>
+
+                <p>
+
+                    We'd love to hear from you.
+
+                </p>
+
+            </section>
+
+            <div class="cards">
+
+                <article class="card">
+
+                    <h3><img src="Images/icons/email_symbol.png" class="contact-card-img"> Email</h3>
+
+                    <p>
+
+                        Business inquiries, collaborations, or general questions.
+
+                    </p>
+
+                    <a href="mailto:stud.studios@outlook.com" class="btn">
+
+                        Email Us
+
+                    </a>
+
+                </article>
+
+                <article class="card">
+
+                    <h3><img src="Images/icons/discord_logo.png" class="contact-card-img"> Discord</h3>
+
+                    <p>
+
+                        Join our community and talk with other builders.
+
+                    </p>
+
+                    <a href="https://discord.gg/uM8w2qUzVJ" class="btn">
+
+                        Join Discord
+
+                    </a>
+
+                </article>
+
+                <article class="card">
+
+                    <h3><img src="Images/icons/youtube_logo.png" class="contact-card-img"> YouTube</h3>
+
+                    <p>
+
+                        Subscribe for LEGO builds, Minecraft content, tutorials, and more.
+
+                    </p>
+
+                    <a href="https://youtube.com/@cymiller2084?si=J98IRNpgdPBNKlAM" class="btn">
+
+                        Visit Channel
+
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- TODO: make the MC server page show the latest IP adress, connection instructions, server rules, the version. -->
+
+
+        <!-- ========================================= -->
+        <!-- MC SERVER PAGE -->
+        <!-- ========================================= -->
+
+        <section id="server" class="page">
+
+            <section class="page-header">
+
+                <h1>Minecraft Server</h1>
+
+                <p>
+
+                    Join the official Stud Studios SMP! Before hopping in, please make sure to read our <a href="#"
+                        onclick="showSection('about-mc', document.querySelectorAll('.nav-btn')[5])">server rules</a>. If
+                    your interested, you might also consider checking out our other info at the bottom of the page.
+
+                </p>
+
+            </section>
+
+            <div class="server-box">
+
+                <p id="serverStatus" class="status">
+                    Checking server...
+                </p>
+
+                <br>
+
+                <p>
+                    <strong>IP:</strong>
+                    <strong id="serverIP">StudStudiosSMP.aternos.me</strong>
+                </p>
+
+                <button>
+
+                    Copy Server IP
+
+                </button>
+
+                <br><br>
+
+                <p><strong>Version: 26.1.2</strong></p>
+
+            </div>
+
+            <br><br>
+
+            <div class="cards">
+
+                <article class="card server-card"
+                    onclick="showSection('connect', document.querySelectorAll('.nav-btn')[5])">
+
+                    <h3>Connection Instructions</h3>
+
+                    <p>
+
+                        Read connection instructions here.
+
+                    </p>
+
+                </article>
+
+                <article class="card server-card"
+                    onclick="showSection('about-mc', document.querySelectorAll('.nav-btn')[5])">
+
+                    <h3>About</h3>
+
+                    <p>
+
+                        Learn more about our server!
+
+                    </p>
+
+                </article>
+
+                <article class="card server-card"
+                    onclick="showSection('events', document.querySelectorAll('.nav-btn')[5])">
+
+                    <h3>Community Events</h3>
+
+                    <p>
+
+                        Participate in server events and building competitions.
+
+                    </p>
+
+                </article>
+
+                <article class="card server-card"
+                    onclick="showSection('rules', document.querySelectorAll('.nav-btn')[5])">
+
+                    <h3>Server Rules</h3>
+
+                    <p>
+
+                        Read the rules of the Stud Studios SMP!
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- ABOUT MC SERVER PAGE -->
+
+        <section id="about-mc" class="page">
+
+            <button class="btn" onclick="showSection('server', document.querySelectorAll('.nav-btn')[5])">
+
+                ← Back to MC Server
+
+            </button>
+
+            <section class="page-header">
+
+                <h1>ABOUT</h1>
+
+                <p>
+                    Learn more about our Minecraft server!
+                </p>
+
+            </section>
+
+            <div class="article-page">
+
+                <p>
+
+                    The Stud Studios Survival SMP is a community Minecraft world where players can build, explore,
+                    trade, and create their own adventures.
+
+                </p>
+
+                <img src="Images/news/MC Server SS 1.png">
+                <p><em>↑ The MVP guest room in the Stud Studios Tavern!</em></p>
+                <img src="Images/news/MC Server SS 2.png">
+                <p><em>↑ The Stud Studios Clock tower!</em></p>
+                <img src="Images/news/MC Server SS 3.png">
+                <p><em>↑ The main lobby of the Stud Studios Tavern!</em></p>
+                <img src="Images/news/MC Server SS 4.png">
+                <p><em>↑ Another floor of the Stud Studios Tavern!</em></p>
+
+                <br>
+
+                <p>
+
+                    New players begin their journey in the Main City. You can stay close to the city, make friends,
+                    visit the tavern, and become part of the growing community.
+
+                </p>
+                <br>
+                <p>
+
+                    Or, if you're feeling adventurous, you can leave the city and search for a place of your own. Build
+                    a house, start a settlement, explore distant lands, or test your luck with trading.
+
+                </p>
+                <br>
+                <p>
+
+                    You can collect the Stud Studios MC server's currency and use that to buy equipment, food, or even
+                    potions!
+
+                </p>
+
+                <p><strong><em>Enjoy your stay at the Stud Studios SMP!</em></strong></p>
+
+            </div>
+
+            <br>
+
+        </section>
+
+        <!-- CONNECTION INSTRUCTIONS PAGE -->
+
+        <section id="connect" class="page">
+
+            <button class="btn" onclick="showSection('server', document.querySelectorAll('.nav-btn')[5])">
+
+                ← Back to MC Server
+
+            </button>
+
+
+            <section class="page-header">
+
+                <h1>CONNECTION INSTRUCTIONS</h1>
+
+                <p>
+                    Here's how to connect to the Stud Studios SMP when playing Bedrock.
+                </p>
+
+            </section>
+
+            <div class="article-page">
+
+                <h3>BEDROCK JOINING COMING SOON.</h3>
+                <p>So sorry about the inconvenience.Thank you so much for your patience and understanding!</p>
+
+            </div>
+
+            <br>
+        </section>
+
+        <!-- MC EVENTS PAGE -->
+
+        <section id="events" class="page">
+
+            <button class="btn" onclick="showSection('server', document.querySelectorAll('.nav-btn')[5])">
+
+                ← Back to MC Server
+
+            </button>
+
+            <section class="page-header">
+
+                <h1>COMMUNITY EVENTS</h1>
+
+                <p>
+                    See what's happening around the Stud Studios server.
+                </p>
+
+            </section>
+
+            <div class="cards">
+
+                <article class="card">
+
+                    <h3>More In The Future!</h3>
+
+                    <p>
+
+                        Keep an eye out for seasonal events and other community activities being held in the future.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+            <br>
+
+
+
+        </section>
+
+        <!-- RULES PAGE -->
+
+        <section id="rules" class="page">
+
+            <section class="page-header">
+
+                <h1>📖 Server Rules</h1>
+
+                <p>
+                    Help keep the Stud Studios SMP fun and welcoming.
+                </p>
+
+            </section>
+
+            <div class="cards">
+
+                <article class="card">
+
+                    <h3>1. Respect Others</h3>
+
+                    <p>
+
+                        Treat other players with respect. Harassment and unnecessary arguments aren't welcome.
+
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>2. No Griefing</h3>
+
+                    <p>
+
+                        Don't destroy, steal, or intentionally damage another player's builds or belongings.
+
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>3. No Cheating</h3>
+
+                    <p>
+
+                        Don't use cheats, hacks, or exploits to gain an unfair advantage.
+
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>4. Build Responsibly</h3>
+
+                    <p>
+
+                        Be considerate of other players when choosing where and how you build.
+
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>5. PVP Rules</h3>
+
+                    <p>
+
+                        If you are going to PVP another player, both players must agree. You then make specific rules,
+                        example: Winner gets losers equiptment.
+
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>6. Protect Your Builds</h3>
+
+                    <p>
+
+                        Use signs or fences to mark your base. Don't build too close to someone else. THE WORLD IS
+                        INFINITE.
+
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>7. No Lagging</h3>
+
+                    <p>
+
+                        Avoid massive redstone clocks, mob farms with thousands of entities, or anything that tanks
+                        server performance.
+
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>8. Respect Staff</h3>
+
+                    <p>
+
+                        If staff says to stop something, stop. Report issues instead of trying to handle them yourself.
+
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <h3>9. Have Fun!</h3>
+
+                    <p>
+
+                        Most importantly, enjoy the server, make awesome creations, and have fun!
+
+                    </p>
+
+                </article>
+
+            </div>
+
+            <br>
+
+            <button class="btn" onclick="showSection('server', document.querySelectorAll('.nav-btn')[5])">
+
+                ← Back to MC Server
+
+            </button>
+
+        </section>
+
+
+
+
+        <!-- ========================================= -->
+        <!-- TUTORIALS PAGE -->
+        <!-- ========================================= -->
+
+        <section id="tutorials" class="page">
+
+            <section class="page-header">
+
+                <h1>YouTube Tutorials</h1>
+
+                <p>
+
+                    Stud Studios will occasionally post tutorials on different LEGO or Mincecraft related things.
+
+                </p>
+
+            </section>
+
+            <div class="cards">
+
+                <article class="card" onclick="showSection('LEGO-tut', document.querySelectorAll('.nav-btn')[6])">
+
+                    <h3>LEGO Building</h3>
+
+                    <p>
+
+                        Learn advanced building techniques, SNOT methods, and creative design.
+
+                    </p>
+
+                </article>
+
+                <article class="card" onclick="showSection('MOC', document.querySelectorAll('.nav-btn')[6])">
+
+                    <h3>LEGO MOCs</h3>
+
+                    <p>
+
+                        How-to tutorials on LEGO MOCs.
+
+                    </p>
+
+                </article>
+
+                <article class="card" onclick="showSection('mc-tut', document.querySelectorAll('.nav-btn')[6])">
+
+                    <h3>Minecraft Building</h3>
+
+                    <p>
+
+                        Build better houses, castles, villages, and landscapes.
+
+                    </p>
+
+                </article>
+
+                <article class="card" onclick="showSection('mc-rs', document.querySelectorAll('.nav-btn')[6])">
+
+                    <h3>Minecraft Redstone</h3>
+
+                    <p>
+
+                        Watch videos on building with redstone!
+
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- LEGO BUILDS -->
+
+        <section id="LEGO-tut" class="page">
+            <p class="no-tut">NO TUTORIALS ON LEGO BUILDS YET</p>
+        </section>
+
+        <!-- LEGO MOCs -->
+
+        <section id="MOC" class="page">
+            <p class="no-tut">NO TUTORIALS ON LEGO MOCS YET</p>
+        </section>
+
+        <!-- MINECRAFT BUILDS -->
+
+        <section id="mc-tut" class="page">
+            <p class="no-tut">NO TUTORIALS ON MINECRAFT BUILDS YET</p>
+        </section>
+
+        <!-- MC REDSTONE -->
+
+        <section id="mc-rs" class="page">
+            <p class="no-tut">NO TUTORIALS ON REDSTONE YET</p>
+        </section>
+
+    </main>
+
+
+
+
+
+    <!-- ========================================= -->
+    <!-- FOOTER -->
+    <!-- ========================================= -->
+
+    <footer>
+
+        <div class="footer-banner">
+
+            <img src="Images/lego-footer.png" alt="LEGO Footer">
+
+        </div>
+
+        <div class="footer-content">
+
+            <h2>Stud Studios</h2>
+
+            <p>
+
+                Build. Create. Inspire.<sup>™</sup>
+
+            </p>
+
+            <div class="footer-links">
+
+                <button onclick="showSection('home', document.querySelectorAll('.nav-btn')[0])">Home</button>
+
+                <button onclick="showSection('news', document.querySelectorAll('.nav-btn')[1])">News</button>
+
+                <button onclick="showSection('merch', document.querySelectorAll('.nav-btn')[2])">Merch</button>
+
+                <button onclick="showSection('support', document.querySelectorAll('.nav-btn')[3])">Support</button>
+
+                <button onclick="showSection('contact', document.querySelectorAll('.nav-btn')[4])">Contact</button>
+
+            </div>
+
+            <div class="footer-social">
+
+                <a href="https://discord.gg/uM8w2qUzVJ" target="_blank" aria-label="Discord">
+
+                    <img src="Images/icons/Discord-white.svg" alt="Discord">
+                    <img src="Images/icons/Discord.svg" alt="Discord">
+
+                </a>
+
+                <a href="https://youtube.com/@cymiller2084?si=J98IRNpgdPBNKlAM" target="_blank" aria-label="YouTube">
+
+                    <img src="Images/icons/Youtube-white.svg" alt="YouTube">
+                    <img src="Images/icons/Youtube.svg" alt="YouTube">
+
+                </a>
+
+                <a href="mailto:stud.studios@outlook.com" aria-label="Email">
+
+                    <img src="Images/icons/email_symbol(white).png" alt="Email">
+                    <img src="Images/icons/email_symbol.png" alt="Email">
+
+                </a>
+
+            </div>
+
+            <p class="copyright">
+
+                © 2026 Stud Studios. All Rights Reserved.
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="JS/script.js"></script>
+
+</body>
+
+</html>
